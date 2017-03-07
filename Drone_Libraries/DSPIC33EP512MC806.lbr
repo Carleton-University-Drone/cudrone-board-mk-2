@@ -1234,44 +1234,44 @@
 <pin name="AN15/PMA0/RPI47/RB15" x="0" y="-73.66"/>
 <pin name="SDA2/PMA9/RP100/RF4" x="0" y="-76.2"/>
 <pin name="SCL2/PMA8/RP101/RF5" x="0" y="-78.74"/>
-<pin name="RP99/RF3" x="182.88" y="-78.74" rot="R180"/>
-<pin name="RP98/RF2" x="182.88" y="-76.2" rot="R180"/>
-<pin name="RP102/RF6" x="182.88" y="-73.66" rot="R180"/>
-<pin name="SDA1/RG3" x="182.88" y="-71.12" rot="R180"/>
-<pin name="SCL1/RG2" x="182.88" y="-68.58" rot="R180"/>
-<pin name="VDD_4" x="182.88" y="-66.04" direction="pwr" rot="R180"/>
-<pin name="OSC1/RPI60/RC12" x="182.88" y="-63.5" rot="R180"/>
-<pin name="OSC2/CLKO/RC15" x="182.88" y="-60.96" rot="R180"/>
-<pin name="VSS" x="182.88" y="-58.42" direction="pwr" rot="R180"/>
-<pin name="RTCC/RPI72/RD8" x="182.88" y="-55.88" rot="R180"/>
-<pin name="ASDA1/RPI73/RD9" x="182.88" y="-53.34" rot="R180"/>
-<pin name="ASCL1/PMCS2/RPI74/RD10" x="182.88" y="-50.8" rot="R180"/>
-<pin name="PMCS1/RPI75/RD11" x="182.88" y="-48.26" rot="R180"/>
-<pin name="INT0/RP64/RD0" x="182.88" y="-45.72" rot="R180"/>
-<pin name="PGED2/SOSCI/C3IN3-/RPI61/RC13" x="182.88" y="-43.18" rot="R180"/>
-<pin name="PGEC2/SOSCO/C3IN1-/T1CK/RPI62/RC14" x="182.88" y="-40.64" rot="R180"/>
-<pin name="RP65/RD1" x="182.88" y="-38.1" rot="R180"/>
-<pin name="RP66/RD2" x="182.88" y="-35.56" rot="R180"/>
-<pin name="PMBE/RP67/RD3" x="182.88" y="-33.02" rot="R180"/>
-<pin name="PMWR/RP68/RD4" x="182.88" y="-30.48" rot="R180"/>
-<pin name="PMRD/RP69/RD5" x="182.88" y="-27.94" rot="R180"/>
-<pin name="C3IN2-/RP70/RD6" x="182.88" y="-25.4" rot="R180"/>
-<pin name="C3IN1+/RP71/RD7" x="182.88" y="-22.86" rot="R180"/>
-<pin name="VCAP" x="182.88" y="-20.32" direction="pwr" rot="R180"/>
-<pin name="VDD" x="182.88" y="-17.78" direction="pwr" rot="R180"/>
-<pin name="RP96/RF0" x="182.88" y="-15.24" rot="R180"/>
-<pin name="RP97/RF1" x="182.88" y="-12.7" rot="R180"/>
-<pin name="AN24/PWM1L/PMD0/RP80/RE0" x="182.88" y="-10.16" rot="R180"/>
-<pin name="AN25/PWM1H/PMD1/RPI81/RE1" x="182.88" y="-7.62" rot="R180"/>
-<pin name="AN26/PWM2L/PMD2/RP82/RE2" x="182.88" y="-5.08" rot="R180"/>
-<pin name="AN27/PWM2H/PMD3/RPI83/RE3" x="182.88" y="-2.54" rot="R180"/>
-<pin name="AN28/PWM3L/PMD4/RP84/RE4" x="182.88" y="0" rot="R180"/>
+<pin name="RP99/RF3" x="93.98" y="-78.74" rot="R180"/>
+<pin name="RP98/RF2" x="93.98" y="-76.2" rot="R180"/>
+<pin name="RP102/RF6" x="93.98" y="-73.66" rot="R180"/>
+<pin name="SDA1/RG3" x="93.98" y="-71.12" rot="R180"/>
+<pin name="SCL1/RG2" x="93.98" y="-68.58" rot="R180"/>
+<pin name="VDD_4" x="93.98" y="-66.04" direction="pwr" rot="R180"/>
+<pin name="OSC1/RPI60/RC12" x="93.98" y="-63.5" rot="R180"/>
+<pin name="OSC2/CLKO/RC15" x="93.98" y="-60.96" rot="R180"/>
+<pin name="VSS" x="93.98" y="-58.42" direction="pwr" rot="R180"/>
+<pin name="RTCC/RPI72/RD8" x="93.98" y="-55.88" rot="R180"/>
+<pin name="ASDA1/RPI73/RD9" x="93.98" y="-53.34" rot="R180"/>
+<pin name="ASCL1/PMCS2/RPI74/RD10" x="93.98" y="-50.8" rot="R180"/>
+<pin name="PMCS1/RPI75/RD11" x="93.98" y="-48.26" rot="R180"/>
+<pin name="INT0/RP64/RD0" x="93.98" y="-45.72" rot="R180"/>
+<pin name="PGED2/SOSCI/C3IN3-/RPI61/RC13" x="93.98" y="-43.18" rot="R180"/>
+<pin name="PGEC2/SOSCO/C3IN1-/T1CK/RPI62/RC14" x="93.98" y="-40.64" rot="R180"/>
+<pin name="RP65/RD1" x="93.98" y="-38.1" rot="R180"/>
+<pin name="RP66/RD2" x="93.98" y="-35.56" rot="R180"/>
+<pin name="PMBE/RP67/RD3" x="93.98" y="-33.02" rot="R180"/>
+<pin name="PMWR/RP68/RD4" x="93.98" y="-30.48" rot="R180"/>
+<pin name="PMRD/RP69/RD5" x="93.98" y="-27.94" rot="R180"/>
+<pin name="C3IN2-/RP70/RD6" x="93.98" y="-25.4" rot="R180"/>
+<pin name="C3IN1+/RP71/RD7" x="93.98" y="-22.86" rot="R180"/>
+<pin name="VCAP" x="93.98" y="-20.32" direction="pwr" rot="R180"/>
+<pin name="VDD" x="93.98" y="-17.78" direction="pwr" rot="R180"/>
+<pin name="RP96/RF0" x="93.98" y="-15.24" rot="R180"/>
+<pin name="RP97/RF1" x="93.98" y="-12.7" rot="R180"/>
+<pin name="AN24/PWM1L/PMD0/RP80/RE0" x="93.98" y="-10.16" rot="R180"/>
+<pin name="AN25/PWM1H/PMD1/RPI81/RE1" x="93.98" y="-7.62" rot="R180"/>
+<pin name="AN26/PWM2L/PMD2/RP82/RE2" x="93.98" y="-5.08" rot="R180"/>
+<pin name="AN27/PWM2H/PMD3/RPI83/RE3" x="93.98" y="-2.54" rot="R180"/>
+<pin name="AN28/PWM3L/PMD4/RP84/RE4" x="93.98" y="0" rot="R180"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-83.82" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-83.82" x2="175.26" y2="-83.82" width="0.1524" layer="94"/>
-<wire x1="175.26" y1="-83.82" x2="175.26" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="175.26" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<text x="86.7156" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="86.0806" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+<wire x1="7.62" y1="-83.82" x2="86.36" y2="-83.82" width="0.1524" layer="94"/>
+<wire x1="86.36" y1="-83.82" x2="86.36" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="86.36" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
+<text x="40.9956" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="40.3606" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
