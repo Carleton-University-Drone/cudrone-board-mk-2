@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9179,7 +9179,7 @@ debugging purposes</text>
 <text x="73.66" y="121.92" size="1.778" layer="97" rot="R270">---USB_OTG---</text>
 <text x="172.72" y="144.78" size="1.778" layer="97" rot="R270">----SD_CARD----</text>
 <text x="170.18" y="66.04" size="1.778" layer="97" rot="R270">--------I2C--------</text>
-<text x="167.64" y="68.58" size="1.778" layer="97" rot="R90">GPS_UART</text>
+<text x="175.26" y="111.76" size="1.778" layer="97" rot="R90">GPS_UART</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -9626,6 +9626,10 @@ usb OTG port. It also contains a usb power regulator so that
 the usb port can be powered from usb. This power regulator
 is also connected to the usb uart bridge so that power to
 the board can be provided from both. </text>
+<text x="43.18" y="162.56" size="1.778" layer="91">This rather strange looking
+connection allows for the
+usb to be powered from
+either direction.</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -11519,6 +11523,7 @@ the IMU, altimeter and the piot tube.</text>
  to connect to the servo motors on the gimbal
  and landing gear, the connections to the reciver 
 and the connections to the esc</text>
+<text x="137.16" y="78.74" size="1.778" layer="91">MCU is running at 3.3V so pullups to make output signal at 5V and the mcu is pulling down.</text>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="0" y="0"/>
