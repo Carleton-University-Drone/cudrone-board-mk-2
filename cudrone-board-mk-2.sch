@@ -158,7 +158,7 @@
 </layers>
 <schematic xreflabel="%F%N/%S" xrefpart="1_/%S.%C%R">
 <libraries>
-<library name="frames">
+<library name="frames" urn="urn:adsk.eagle:library:229">
 <description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
 <packages>
 </packages>
@@ -1860,6 +1860,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <hole x="1.5" y="0" drill="1"/>
 <wire x1="-0.4" y1="0" x2="-0.7" y2="0" width="0.127" layer="21"/>
 <wire x1="0.3" y1="0" x2="0.8" y2="0" width="0.127" layer="21"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;Name</text>
 </package>
 </packages>
 <symbols>
@@ -9233,15 +9234,15 @@ ADDR -&gt; GND  = 0x76</description>
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="frames" deviceset="LETTER_L" device=""/>
-<part name="FRAME2" library="frames" deviceset="LETTER_L" device=""/>
-<part name="FRAME3" library="frames" deviceset="LETTER_L" device=""/>
-<part name="FRAME4" library="frames" deviceset="LETTER_L" device=""/>
-<part name="FRAME5" library="frames" deviceset="LETTER_L" device=""/>
-<part name="FRAME6" library="frames" deviceset="LETTER_L" device=""/>
-<part name="FRAME7" library="frames" deviceset="LETTER_L" device=""/>
-<part name="FRAME8" library="frames" deviceset="LETTER_L" device=""/>
-<part name="FRAME9" library="frames" deviceset="LETTER_L" device=""/>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME7" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME8" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
+<part name="FRAME9" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="U1" library="SparkFun-Boards" deviceset="EDISON_CONNECTOR_FULL" device="MOUNTING_HOLES"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="BAT_BACKUP" library="SparkFun-Electromechanical" deviceset="BATTERY" device="12MM" value="RTC backup battery"/>
@@ -9352,7 +9353,6 @@ ADDR -&gt; GND  = 0x76</description>
 <part name="MOTOR_SERVO" library="Drone_Connectors" deviceset="3X6" device=""/>
 <part name="POWER" library="SparkFun-Electromechanical" deviceset="CANSAT_SWITCH" device=""/>
 <part name="U10" library="A2235-H" deviceset="A2235-H" device=""/>
-<part name="RESET" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
 <part name="GND40" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY30" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -9606,6 +9606,11 @@ ADDR -&gt; GND  = 0x76</description>
 <part name="GND80" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND81" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND82" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R63" library="SparkFun-Resistors" deviceset="27OHM1/10W1%(0603)" device="" value="470"/>
+<part name="EDISON_RESET" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device=""/>
+<part name="C47" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
+<part name="MCU_RESET" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device=""/>
+<part name="GND83" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9640,9 +9645,6 @@ ADDR -&gt; GND  = 0x76</description>
 <instance part="POWER" gate="G$1" x="43.18" y="132.08" smashed="yes">
 <attribute name="NAME" x="41.275" y="125.73" size="1.778" layer="95"/>
 </instance>
-<instance part="RESET" gate="G$1" x="223.52" y="154.94" smashed="yes">
-<attribute name="NAME" x="220.98" y="157.48" size="1.778" layer="95"/>
-</instance>
 <instance part="GND40" gate="1" x="55.88" y="124.46"/>
 <instance part="SUPPLY30" gate="G$1" x="55.88" y="137.16"/>
 <instance part="SUPPLY7" gate="G$1" x="215.9" y="172.72"/>
@@ -9655,6 +9657,9 @@ ADDR -&gt; GND  = 0x76</description>
 <instance part="GND80" gate="1" x="147.32" y="152.4"/>
 <instance part="GND81" gate="1" x="157.48" y="152.4"/>
 <instance part="GND82" gate="1" x="167.64" y="152.4"/>
+<instance part="EDISON_RESET" gate="G$1" x="223.52" y="154.94" smashed="yes">
+<attribute name="NAME" x="220.98" y="157.48" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9701,10 +9706,10 @@ ADDR -&gt; GND  = 0x76</description>
 <wire x1="119.38" y1="134.62" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RESET" gate="G$1" pin="2"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="228.6" y1="154.94" x2="231.14" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="154.94" x2="231.14" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="EDISON_RESET" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="POWER" gate="G$1" pin="S"/>
@@ -9804,8 +9809,8 @@ ADDR -&gt; GND  = 0x76</description>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="154.94" x2="215.9" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="154.94" x2="215.9" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="RESET" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="154.94" x2="218.44" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="EDISON_RESET" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PWRBTN#" class="0">
@@ -11308,14 +11313,14 @@ contains a usb connection for an enventual bootloader</text>
 <instance part="GND54" gate="1" x="109.22" y="76.2"/>
 <instance part="GND55" gate="1" x="119.38" y="91.44"/>
 <instance part="GND56" gate="1" x="109.22" y="129.54"/>
-<instance part="ICSP" gate="A" x="45.72" y="160.02" rot="R180"/>
-<instance part="GND57" gate="1" x="66.04" y="157.48"/>
-<instance part="SUPPLY100" gate="G$1" x="66.04" y="162.56"/>
-<instance part="R61" gate="G$1" x="53.34" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="51.8414" y="168.91" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="51.562" y="173.99" size="1.778" layer="96" rot="R90"/>
+<instance part="ICSP" gate="A" x="7.62" y="160.02" rot="R180"/>
+<instance part="GND57" gate="1" x="27.94" y="157.48"/>
+<instance part="SUPPLY100" gate="G$1" x="35.56" y="157.48"/>
+<instance part="R61" gate="G$1" x="15.24" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.7414" y="168.91" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="13.462" y="173.99" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY101" gate="G$1" x="53.34" y="177.8"/>
+<instance part="SUPPLY101" gate="G$1" x="15.24" y="177.8"/>
 <instance part="C21" gate="G$1" x="114.3" y="99.06" rot="R180"/>
 <instance part="C22" gate="G$1" x="116.84" y="81.28" rot="R270"/>
 <instance part="C23" gate="G$1" x="116.84" y="134.62" rot="R270"/>
@@ -11348,6 +11353,15 @@ contains a usb connection for an enventual bootloader</text>
 <instance part="C33" gate="G$1" x="106.68" y="167.64"/>
 <instance part="SUPPLY105" gate="G$1" x="96.52" y="175.26"/>
 <instance part="GND69" gate="1" x="96.52" y="160.02"/>
+<instance part="R63" gate="G$1" x="58.42" y="175.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="62.23" y="173.7614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="57.15" y="173.482" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C47" gate="G$1" x="50.8" y="154.94"/>
+<instance part="MCU_RESET" gate="G$1" x="50.8" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="48.26" y="160.02" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="GND83" gate="1" x="50.8" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -11433,7 +11447,7 @@ contains a usb connection for an enventual bootloader</text>
 <segment>
 <pinref part="ICSP" gate="A" pin="4"/>
 <pinref part="GND57" gate="1" pin="GND"/>
-<wire x1="48.26" y1="160.02" x2="66.04" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="160.02" x2="27.94" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="1"/>
@@ -11491,6 +11505,11 @@ contains a usb connection for an enventual bootloader</text>
 <wire x1="96.52" y1="165.1" x2="91.44" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="C30" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="165.1" x2="83.82" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND83" gate="1" pin="GND"/>
+<pinref part="C47" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="149.86" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -11667,11 +11686,6 @@ contains a usb connection for an enventual bootloader</text>
 <wire x1="124.46" y1="167.64" x2="124.46" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="ICSP" gate="A" pin="5"/>
-<pinref part="SUPPLY100" gate="G$1" pin="3.3V"/>
-<wire x1="48.26" y1="162.56" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R61" gate="G$1" pin="2"/>
 <pinref part="SUPPLY101" gate="G$1" pin="3.3V"/>
 </segment>
@@ -11709,27 +11723,35 @@ contains a usb connection for an enventual bootloader</text>
 <pinref part="SUPPLY105" gate="G$1" pin="3.3V"/>
 <wire x1="96.52" y1="175.26" x2="96.52" y2="172.72" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="ICSP" gate="A" pin="5"/>
+<wire x1="10.16" y1="162.56" x2="33.02" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="162.56" x2="33.02" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="SUPPLY100" gate="G$1" pin="3.3V"/>
+<wire x1="33.02" y1="157.48" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VPP" class="0">
 <segment>
 <pinref part="ICSP" gate="A" pin="6"/>
-<wire x1="48.26" y1="165.1" x2="53.34" y2="165.1" width="0.1524" layer="91"/>
-<label x="55.88" y="165.1" size="1.778" layer="95"/>
+<wire x1="10.16" y1="165.1" x2="15.24" y2="165.1" width="0.1524" layer="91"/>
+<label x="17.78" y="165.1" size="1.778" layer="95"/>
 <pinref part="R61" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="165.1" x2="60.96" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="165.1" x2="53.34" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U13" gate="A" pin="*MCLR"/>
-<wire x1="129.54" y1="142.24" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
-<label x="114.3" y="142.24" size="1.778" layer="95"/>
+<wire x1="15.24" y1="165.1" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="165.1" x2="25.4" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="165.1" x2="25.4" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="R63" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="175.26" x2="50.8" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="MCU_RESET" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="175.26" x2="53.34" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="172.72" x2="50.8" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PGD" class="0">
 <segment>
 <pinref part="ICSP" gate="A" pin="3"/>
-<wire x1="48.26" y1="157.48" x2="58.42" y2="157.48" width="0.1524" layer="91"/>
-<label x="53.34" y="157.48" size="1.778" layer="95"/>
+<wire x1="10.16" y1="157.48" x2="20.32" y2="157.48" width="0.1524" layer="91"/>
+<label x="15.24" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U13" gate="A" pin="PGED1/AN7/RCV/RPI39/RB7"/>
@@ -11740,8 +11762,8 @@ contains a usb connection for an enventual bootloader</text>
 <net name="PGC" class="0">
 <segment>
 <pinref part="ICSP" gate="A" pin="2"/>
-<wire x1="48.26" y1="154.94" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
-<label x="53.34" y="154.94" size="1.778" layer="95"/>
+<wire x1="10.16" y1="154.94" x2="20.32" y2="154.94" width="0.1524" layer="91"/>
+<label x="15.24" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U13" gate="A" pin="PGEC1/AN6/RPI38/RB6"/>
@@ -11752,8 +11774,8 @@ contains a usb connection for an enventual bootloader</text>
 <net name="LVP" class="0">
 <segment>
 <pinref part="ICSP" gate="A" pin="1"/>
-<wire x1="48.26" y1="152.4" x2="58.42" y2="152.4" width="0.1524" layer="91"/>
-<label x="53.34" y="152.4" size="1.778" layer="95"/>
+<wire x1="10.16" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
+<label x="15.24" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -11845,6 +11867,25 @@ contains a usb connection for an enventual bootloader</text>
 <pinref part="R62" gate="D" pin="2"/>
 <wire x1="38.1" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
 <label x="38.1" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCLR" class="0">
+<segment>
+<pinref part="U13" gate="A" pin="*MCLR"/>
+<wire x1="129.54" y1="142.24" x2="109.22" y2="142.24" width="0.1524" layer="91"/>
+<label x="109.22" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R63" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="175.26" x2="71.12" y2="175.26" width="0.1524" layer="91"/>
+<label x="63.5" y="175.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="MCU_RESET" gate="G$1" pin="1"/>
+<pinref part="C47" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="162.56" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
