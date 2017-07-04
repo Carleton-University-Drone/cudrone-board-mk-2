@@ -9217,6 +9217,107 @@ ADDR -&gt; GND  = 0x76</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="murata-filter">
+<description>&lt;b&gt;Murata Filters&lt;/b&gt;&lt;p&gt;
+Distributor RS Components&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="CSTCR6M">
+<description>Source: http://search.murata.co.jp/Ceramy/CatalogshowpageAction.do?sDirnm=A07X&amp;sFilnm=81G07006&amp;sType=2&amp;sLang=en&amp;sNHinnm=CSTCR6M00G53Z-R0&amp;sCapt=Standard_Land_Pattern_Dimensions</description>
+<wire x1="-2.2" y1="-0.95" x2="2.2" y2="-0.95" width="0.1016" layer="51"/>
+<wire x1="2.2" y1="-0.95" x2="2.2" y2="0.95" width="0.1016" layer="21"/>
+<wire x1="2.2" y1="0.95" x2="-2.2" y2="0.95" width="0.1016" layer="51"/>
+<wire x1="-2.2" y1="0.95" x2="-2.2" y2="-0.95" width="0.1016" layer="21"/>
+<smd name="1" x="-1.5" y="0" dx="0.8" dy="2.6" layer="1" stop="no" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.8" dy="2.6" layer="1" stop="no" cream="no"/>
+<smd name="3" x="1.5" y="0" dx="0.8" dy="2.6" layer="1" stop="no" cream="no"/>
+<text x="-2.54" y="1.524" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-2.794" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.4" y1="0.8" x2="0.4" y2="1.3" layer="29"/>
+<rectangle x1="-0.4" y1="-1.3" x2="0.4" y2="-0.8" layer="29" rot="R180"/>
+<rectangle x1="-0.2" y1="-0.8" x2="0.2" y2="0.8" layer="29"/>
+<rectangle x1="-1.9" y1="0.8" x2="-1.1" y2="1.3" layer="29"/>
+<rectangle x1="-1.9" y1="-1.3" x2="-1.1" y2="-0.8" layer="29" rot="R180"/>
+<rectangle x1="-1.7" y1="-0.8" x2="-1.3" y2="0.8" layer="29"/>
+<rectangle x1="1.1" y1="0.8" x2="1.9" y2="1.3" layer="29"/>
+<rectangle x1="1.1" y1="-1.3" x2="1.9" y2="-0.8" layer="29" rot="R180"/>
+<rectangle x1="1.3" y1="-0.8" x2="1.7" y2="0.8" layer="29"/>
+<rectangle x1="-1.7" y1="-0.8" x2="-1.3" y2="0.8" layer="31"/>
+<rectangle x1="-0.2" y1="-0.8" x2="0.2" y2="0.8" layer="31"/>
+<rectangle x1="1.3" y1="-0.8" x2="1.7" y2="0.8" layer="31"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CST">
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="1.27" x2="-0.508" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="-1.27" x2="0.508" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="-1.27" x2="0.508" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="1.27" x2="-0.508" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="0" y1="-3.302" x2="-1.778" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="0" y1="-3.302" x2="1.778" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-2.286" x2="1.778" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.286" x2="2.54" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-3.302" x2="2.54" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-3.302" x2="3.81" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-3.302" x2="3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-2.286" x2="-1.778" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.286" x2="-2.54" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-3.302" x2="-2.54" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-3.302" x2="-3.81" y2="-3.302" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-3.302" x2="-3.81" y2="0" width="0.1524" layer="94"/>
+<circle x="-3.81" y="0" radius="0.254" width="0" layer="94"/>
+<circle x="3.81" y="0" radius="0.254" width="0" layer="94"/>
+<circle x="0" y="-3.302" radius="0.254" width="0" layer="94"/>
+<text x="-5.08" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="3" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CSTCR" prefix="Q">
+<description>&lt;b&gt;Resonator&lt;/b&gt;&lt;p&gt;
+Source: murata.co.jp</description>
+<gates>
+<gate name="G$1" symbol="CST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CSTCR6M">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="6M00G53Z">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="CSTCR6M00G53-R0" constant="no"/>
+<attribute name="OC_FARNELL" value="1170434" constant="no"/>
+<attribute name="OC_NEWARK" value="25M8759" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9611,6 +9712,11 @@ ADDR -&gt; GND  = 0x76</description>
 <part name="C47" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="MCU_RESET" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device=""/>
 <part name="GND83" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R64" library="SparkFun-Resistors" deviceset="27OHM1/10W1%(0603)" device="" value="50"/>
+<part name="R65" library="SparkFun-Resistors" deviceset="27OHM1/10W1%(0603)" device="" value="50"/>
+<part name="Q1" library="murata-filter" deviceset="CSTCR" device="" technology="6M00G53Z"/>
+<part name="GND84" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R66" library="SparkFun-Resistors" deviceset="27OHM1/10W1%(0603)" device="" value="1M"/>
 </parts>
 <sheets>
 <sheet>
@@ -11314,8 +11420,8 @@ contains a usb connection for an enventual bootloader</text>
 <instance part="GND55" gate="1" x="119.38" y="91.44"/>
 <instance part="GND56" gate="1" x="109.22" y="129.54"/>
 <instance part="ICSP" gate="A" x="7.62" y="160.02" rot="R180"/>
-<instance part="GND57" gate="1" x="27.94" y="157.48"/>
-<instance part="SUPPLY100" gate="G$1" x="35.56" y="157.48"/>
+<instance part="GND57" gate="1" x="43.18" y="157.48"/>
+<instance part="SUPPLY100" gate="G$1" x="27.94" y="167.64"/>
 <instance part="R61" gate="G$1" x="15.24" y="172.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.7414" y="168.91" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="13.462" y="173.99" size="1.778" layer="96" rot="R90"/>
@@ -11362,6 +11468,20 @@ contains a usb connection for an enventual bootloader</text>
 <attribute name="NAME" x="48.26" y="160.02" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="GND83" gate="1" x="50.8" y="147.32"/>
+<instance part="R64" gate="G$1" x="27.94" y="157.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.75" y="155.9814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="26.67" y="155.702" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R65" gate="G$1" x="27.94" y="149.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.75" y="148.3614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="26.67" y="148.082" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="Q1" gate="G$1" x="68.58" y="124.46" rot="R90"/>
+<instance part="GND84" gate="1" x="91.44" y="119.38"/>
+<instance part="R66" gate="G$1" x="58.42" y="124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="56.9214" y="120.65" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="61.722" y="120.65" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11447,7 +11567,7 @@ contains a usb connection for an enventual bootloader</text>
 <segment>
 <pinref part="ICSP" gate="A" pin="4"/>
 <pinref part="GND57" gate="1" pin="GND"/>
-<wire x1="10.16" y1="160.02" x2="27.94" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="160.02" x2="43.18" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="1"/>
@@ -11510,6 +11630,12 @@ contains a usb connection for an enventual bootloader</text>
 <pinref part="GND83" gate="1" pin="GND"/>
 <pinref part="C47" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="149.86" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="124.46" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="GND84" gate="1" pin="GND"/>
+<wire x1="91.44" y1="124.46" x2="91.44" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -11725,10 +11851,9 @@ contains a usb connection for an enventual bootloader</text>
 </segment>
 <segment>
 <pinref part="ICSP" gate="A" pin="5"/>
-<wire x1="10.16" y1="162.56" x2="33.02" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="162.56" x2="33.02" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="SUPPLY100" gate="G$1" pin="3.3V"/>
-<wire x1="33.02" y1="157.48" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="162.56" x2="27.94" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="162.56" x2="27.94" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VPP" class="0">
@@ -11749,26 +11874,26 @@ contains a usb connection for an enventual bootloader</text>
 </net>
 <net name="PGD" class="0">
 <segment>
-<pinref part="ICSP" gate="A" pin="3"/>
-<wire x1="10.16" y1="157.48" x2="20.32" y2="157.48" width="0.1524" layer="91"/>
-<label x="15.24" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U13" gate="A" pin="PGED1/AN7/RCV/RPI39/RB7"/>
 <wire x1="129.54" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
 <label x="114.3" y="106.68" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R64" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="157.48" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
+<label x="33.02" y="157.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PGC" class="0">
-<segment>
-<pinref part="ICSP" gate="A" pin="2"/>
-<wire x1="10.16" y1="154.94" x2="20.32" y2="154.94" width="0.1524" layer="91"/>
-<label x="15.24" y="154.94" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U13" gate="A" pin="PGEC1/AN6/RPI38/RB6"/>
 <wire x1="129.54" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
 <label x="114.3" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R65" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
+<label x="33.02" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LVP" class="0">
@@ -11886,6 +12011,53 @@ contains a usb connection for an enventual bootloader</text>
 <pinref part="MCU_RESET" gate="G$1" pin="1"/>
 <pinref part="C47" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="162.56" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="ICSP" gate="A" pin="3"/>
+<pinref part="R64" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="157.48" x2="22.86" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="ICSP" gate="A" pin="2"/>
+<pinref part="R65" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="154.94" x2="22.86" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="154.94" x2="22.86" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OSC2" class="0">
+<segment>
+<pinref part="U13" gate="A" pin="OSC2/CLKO/RC15"/>
+<wire x1="215.9" y1="81.28" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
+<label x="215.9" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="116.84" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="114.3" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
+<label x="78.74" y="114.3" size="1.778" layer="95"/>
+<pinref part="R66" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="119.38" x2="58.42" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OSC1" class="0">
+<segment>
+<pinref part="U13" gate="A" pin="OSC1/RPI60/RC12"/>
+<wire x1="215.9" y1="78.74" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
+<label x="215.9" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="3"/>
+<wire x1="68.58" y1="132.08" x2="68.58" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
+<label x="78.74" y="134.62" size="1.778" layer="95"/>
+<pinref part="R66" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="129.54" x2="58.42" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="134.62" x2="68.58" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
