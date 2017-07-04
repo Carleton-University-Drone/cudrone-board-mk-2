@@ -4044,6 +4044,41 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <circle x="-3.81" y="0" radius="1.02390625" width="0" layer="30"/>
 <circle x="3.81" y="0" radius="1.04726875" width="0" layer="30"/>
 </package>
+<package name="0603-ARV">
+<description>&lt;b&gt;Chip Resistor Array&lt;/b&gt; size 4 × 0603&lt;p&gt;
+convex termination - Phycomp Components&lt;br&gt;
+Source: RS Components</description>
+<wire x1="-1.55" y1="0.45" x2="1.55" y2="0.45" width="0.1016" layer="51"/>
+<wire x1="1.55" y1="0.45" x2="1.55" y2="-0.45" width="0.1016" layer="51"/>
+<wire x1="-1.55" y1="-0.45" x2="-1.55" y2="0.45" width="0.1016" layer="51"/>
+<wire x1="1.55" y1="-0.45" x2="-1.55" y2="-0.45" width="0.1016" layer="51"/>
+<smd name="1" x="-1.2" y="-0.625" dx="0.5" dy="0.65" layer="1"/>
+<smd name="2" x="-0.4" y="-0.625" dx="0.5" dy="0.65" layer="1"/>
+<smd name="3" x="0.4" y="-0.625" dx="0.5" dy="0.65" layer="1"/>
+<smd name="4" x="1.2" y="-0.625" dx="0.5" dy="0.65" layer="1"/>
+<smd name="5" x="1.2" y="0.625" dx="0.5" dy="0.65" layer="1"/>
+<smd name="6" x="0.4" y="0.625" dx="0.5" dy="0.65" layer="1"/>
+<smd name="7" x="-0.4" y="0.625" dx="0.5" dy="0.65" layer="1"/>
+<smd name="8" x="-1.2" y="0.625" dx="0.5" dy="0.65" layer="1"/>
+<text x="-1.905" y="-2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.6" y1="0.7" x2="-0.9" y2="0.8" layer="51"/>
+<rectangle x1="-0.7" y1="0.7" x2="-0.1" y2="0.8" layer="51"/>
+<rectangle x1="0.1" y1="0.7" x2="0.7" y2="0.8" layer="51"/>
+<rectangle x1="0.9" y1="0.7" x2="1.6" y2="0.8" layer="51"/>
+<rectangle x1="-1.5" y1="0.5" x2="-0.95" y2="0.7" layer="51"/>
+<rectangle x1="-0.65" y1="0.5" x2="-0.15" y2="0.7" layer="51"/>
+<rectangle x1="0.15" y1="0.5" x2="0.65" y2="0.7" layer="51"/>
+<rectangle x1="0.95" y1="0.5" x2="1.5" y2="0.7" layer="51"/>
+<rectangle x1="0.9" y1="-0.8" x2="1.6" y2="-0.7" layer="51"/>
+<rectangle x1="0.1" y1="-0.8" x2="0.7" y2="-0.7" layer="51"/>
+<rectangle x1="-0.7" y1="-0.8" x2="-0.1" y2="-0.7" layer="51"/>
+<rectangle x1="-1.6" y1="-0.8" x2="-0.9" y2="-0.7" layer="51"/>
+<rectangle x1="0.95" y1="-0.7" x2="1.5" y2="-0.5" layer="51"/>
+<rectangle x1="0.15" y1="-0.7" x2="0.65" y2="-0.5" layer="51"/>
+<rectangle x1="-0.65" y1="-0.7" x2="-0.15" y2="-0.5" layer="51"/>
+<rectangle x1="-1.5" y1="-0.7" x2="-0.95" y2="-0.5" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PAD-JUMPER-2-NC_BY_TRACE">
@@ -4086,6 +4121,21 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="RESISTOR-1">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4546,6 +4596,33 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR-ARRAY" prefix="R" uservalue="yes">
+<description>&lt;b&gt;Array Chip Resistor&lt;/b&gt;&lt;p&gt;
+Source: RS Component / Phycomp</description>
+<gates>
+<gate name="A" symbol="RESISTOR-1" x="0" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="RESISTOR-1" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="C" symbol="RESISTOR-1" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="D" symbol="RESISTOR-1" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="0603-ARV" package="0603-ARV">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="8"/>
+<connect gate="B" pin="1" pad="2"/>
+<connect gate="B" pin="2" pad="7"/>
+<connect gate="C" pin="1" pad="3"/>
+<connect gate="C" pin="2" pad="6"/>
+<connect gate="D" pin="1" pad="4"/>
+<connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9154,6 +9231,12 @@ ADDR -&gt; GND  = 0x76</description>
 <part name="C28" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="GND61" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY103" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="R62" library="SparkFun-Passives" deviceset="RESISTOR-ARRAY" device="0603-ARV" value="50"/>
+<part name="D8" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
+<part name="D9" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
+<part name="D10" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
+<part name="D11" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
+<part name="GND62" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9396,8 +9479,11 @@ debugging purposes</text>
 <text x="172.72" y="96.52" size="1.778" layer="97" rot="R270">Console_UART</text>
 <text x="73.66" y="121.92" size="1.778" layer="97" rot="R270">---USB_OTG---</text>
 <text x="172.72" y="144.78" size="1.778" layer="97" rot="R270">----SD_CARD----</text>
-<text x="170.18" y="66.04" size="1.778" layer="97" rot="R270">--------I2C--------</text>
+<text x="170.18" y="63.5" size="1.778" layer="97" rot="R270">--------I2C--------</text>
 <text x="175.26" y="111.76" size="1.778" layer="97" rot="R90">GPS_UART</text>
+<text x="167.64" y="48.26" size="1.016" layer="97" rot="R90">Sensors</text>
+<text x="167.64" y="60.96" size="1.016" layer="97" rot="R90">MCU</text>
+<text x="86.36" y="78.74" size="1.778" layer="97" rot="R90">----LED----</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -10772,12 +10858,21 @@ contains a usb connection for an enventual bootloader</text>
 <instance part="C25" gate="G$1" x="116.84" y="58.42" rot="R270"/>
 <instance part="C26" gate="G$1" x="231.14" y="132.08" rot="R180"/>
 <instance part="GND59" gate="1" x="231.14" y="124.46"/>
-<instance part="SUPPLY102" gate="G$1" x="241.3" y="139.7"/>
+<instance part="SUPPLY102" gate="G$1" x="241.3" y="137.16"/>
 <instance part="C27" gate="G$1" x="241.3" y="132.08" rot="R180"/>
 <instance part="GND60" gate="1" x="241.3" y="101.6"/>
 <instance part="C28" gate="G$1" x="233.68" y="81.28" rot="R180"/>
 <instance part="GND61" gate="1" x="243.84" y="81.28"/>
 <instance part="SUPPLY103" gate="G$1" x="243.84" y="71.12"/>
+<instance part="R62" gate="A" x="33.02" y="137.16"/>
+<instance part="R62" gate="B" x="33.02" y="127"/>
+<instance part="R62" gate="C" x="33.02" y="116.84"/>
+<instance part="R62" gate="D" x="33.02" y="106.68"/>
+<instance part="D8" gate="G$1" x="22.86" y="106.68" rot="MR90"/>
+<instance part="D9" gate="G$1" x="22.86" y="116.84" rot="MR90"/>
+<instance part="D10" gate="G$1" x="22.86" y="127" rot="MR90"/>
+<instance part="D11" gate="G$1" x="22.86" y="137.16" rot="MR90"/>
+<instance part="GND62" gate="1" x="15.24" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -10889,6 +10984,21 @@ contains a usb connection for an enventual bootloader</text>
 <wire x1="233.68" y1="86.36" x2="233.68" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U13" gate="A" pin="VSS_5"/>
 <wire x1="233.68" y1="83.82" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND62" gate="1" pin="GND"/>
+<wire x1="15.24" y1="101.6" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="D11" gate="G$1" pin="C"/>
+<wire x1="15.24" y1="106.68" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="116.84" x2="15.24" y2="127" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="127" x2="15.24" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="137.16" x2="17.78" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="D10" gate="G$1" pin="C"/>
+<wire x1="17.78" y1="127" x2="15.24" y2="127" width="0.1524" layer="91"/>
+<pinref part="D9" gate="G$1" pin="C"/>
+<wire x1="17.78" y1="116.84" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="D8" gate="G$1" pin="C"/>
+<wire x1="17.78" y1="106.68" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -11076,7 +11186,6 @@ contains a usb connection for an enventual bootloader</text>
 <segment>
 <pinref part="SUPPLY102" gate="G$1" pin="3.3V"/>
 <pinref part="C27" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="139.7" x2="241.3" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U13" gate="A" pin="VDD"/>
 <wire x1="241.3" y1="137.16" x2="241.3" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="137.16" x2="241.3" y2="137.16" width="0.1524" layer="91"/>
@@ -11169,6 +11278,62 @@ contains a usb connection for an enventual bootloader</text>
 <pinref part="U13" gate="A" pin="ASCL2/RPI18/RA2"/>
 <wire x1="215.9" y1="66.04" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
 <label x="215.9" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="D8" gate="G$1" pin="A"/>
+<pinref part="R62" gate="D" pin="1"/>
+<wire x1="25.4" y1="106.68" x2="27.94" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="D9" gate="G$1" pin="A"/>
+<pinref part="R62" gate="C" pin="1"/>
+<wire x1="25.4" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="D10" gate="G$1" pin="A"/>
+<pinref part="R62" gate="B" pin="1"/>
+<wire x1="25.4" y1="127" x2="27.94" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="D11" gate="G$1" pin="A"/>
+<pinref part="R62" gate="A" pin="1"/>
+<wire x1="25.4" y1="137.16" x2="27.94" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MCU_LED_1" class="0">
+<segment>
+<pinref part="R62" gate="A" pin="2"/>
+<wire x1="38.1" y1="137.16" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
+<label x="38.1" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_LED_2" class="0">
+<segment>
+<pinref part="R62" gate="B" pin="2"/>
+<wire x1="38.1" y1="127" x2="50.8" y2="127" width="0.1524" layer="91"/>
+<label x="38.1" y="127" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_LED_3" class="0">
+<segment>
+<pinref part="R62" gate="C" pin="2"/>
+<wire x1="38.1" y1="116.84" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
+<label x="38.1" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MCU_LED_4" class="0">
+<segment>
+<pinref part="R62" gate="D" pin="2"/>
+<wire x1="38.1" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
+<label x="38.1" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -11954,7 +12119,7 @@ the IMU, altimeter and the piot tube.</text>
  to connect to the servo motors on the gimbal
  and landing gear, the connections to the reciver 
 and the connections to the esc</text>
-<text x="137.16" y="78.74" size="1.778" layer="91">MCU is running at 3.3V so pullups to make output signal at 5V and the mcu is pulling down.</text>
+<text x="137.16" y="78.74" size="1.778" layer="97">MCU is running at 3.3V so pullups to make output signal at 5V and the mcu is pulling down.</text>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="0" y="0"/>
